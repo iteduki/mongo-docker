@@ -15,8 +15,8 @@ docker-compose ps
 docker exec -it python3 bash
 ```
 
-# mongo-expressへアクセス
-DBの中をブラウザで見れる
+# mongo-expressへアクセス
+DBの中をブラウザで見れる
 ```
 http://0.0.0.0:8081/
 ```
