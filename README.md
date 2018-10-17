@@ -19,8 +19,7 @@ http://0.0.0.0:8081/
 
 ```
 docker-compose exec mongo bash
-mongo admin -u root -p
-<docker-compose.yamlに記載したパスワードを入力。デフォルトは"admin">
+mongo admin
 ```
 
 testデータベースのhogeテーブルにレコードを追加して確認するサンプル
