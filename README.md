@@ -36,6 +36,11 @@ exit
 コンテナへ接続
 ```
 docker exec -it python3 bash
+```
+
+プロジェクト配下のappフォルダをpythonコンテナの `/root/app` に割り当てている
+
+```
 cd app
 python helloworld.py
 ```
