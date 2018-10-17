@@ -5,8 +5,14 @@ client = MongoClient('mongo', 27017)
 db = client.test_db
 collection = db.test_collection
 
-results = collection.find()
+# dbの全削除
+collection.drop()
+
+# 100万件のレコード
+collection.insert_many([{"id": i}for i in range(1000000)])
+
+# idが1のものを探す
+results = collection.find({"id": 1})
 
 for result in results:
     print(result)
-result = collection.insert_one({"id": 1, "name": "tetsufe"})
