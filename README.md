@@ -9,12 +9,6 @@ docker-compose up -d
 docker-compose ps
 ```
 
-# Python実行
-コンテナへ接続
-```
-docker exec -it python3 bash
-```
-
 # mongo-expressへアクセス
 DBの中をブラウザで見れる
 ```
