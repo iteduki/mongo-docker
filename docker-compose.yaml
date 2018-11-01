@@ -10,6 +10,7 @@ services:
     command: 'tail -f /dev/null'
     volumes:
       - ./app:/root/app
+      - ./json:/root/json
   mongo:
     image: mongo
     restart: always
